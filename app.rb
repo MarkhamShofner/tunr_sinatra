@@ -12,6 +12,7 @@ require_relative 'db/connection.rb'
 # Load models
 require_relative 'models/artist'
 require_relative 'models/song'
+require_relative 'controllers/artists_controller.rb'
 
 ####################
 #  General routes  #
@@ -21,14 +22,10 @@ get "/" do
   erb :home
 end
 
-get "/artists" do
-  erb :artists
-end
-
 get "/songs" do
   erb :songs
 end
 
-get "/:paramsTest" do
-  "#{params[:paramsTest]} hello ww"
-end
+# get "/:paramsTest" do
+#   "#{params[:paramsTest]} PARAMS hello ww"
+# end
