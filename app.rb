@@ -17,3 +17,18 @@ require_relative 'models/song'
 #  General routes  #
 ####################
 # [MORE OF YOUR CODE HERE!]
+get "/" do
+  erb :home
+end
+
+get "/artists" do
+  erb :artists
+end
+
+get "/songs" do
+  erb :songs
+end
+
+get "/:paramsTest" do
+  "#{params[:paramsTest]} hello ww"
+end
