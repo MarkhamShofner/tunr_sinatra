@@ -1,4 +1,21 @@
 body {
-  background-color: rgb(133, 148, 38);
+  background-color: rgb(92, 131, 184);
   text-align: center;
+}
+
+nav a {
+  background-color: rgb(169, 180, 61);
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  padding: .7em;
+  margin: .3em;
+}
+
+nav a:hover {
+  background-color: rgb(198, 34, 149);
+}
+
+ul {
+  list-style-type: none;
 }

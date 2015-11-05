@@ -11,3 +11,8 @@ post "/artists" do
   @artists = Artist.create!(name: params[:artist_name])
   redirect "artists"
 end
+
+get "/artists/:id" do
+  @artist = Artist.find(params[:id])
+  erb(:"artists/show")
+end
