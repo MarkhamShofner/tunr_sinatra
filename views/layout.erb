@@ -5,14 +5,16 @@
   <link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
 <body>
-  <h4>Test Layout Header, before the yield</h4>
+  <h1>TUNR</h4>
   <nav>
     | <a href="/artists">Artists</a> |
     <a href="/songs">Songs</a> |
   </nav>
     <p>this is a test paragraph before the yield</p>
+
+  <!-- yield contents for ruby to inject  -->
   <%= yield %>
-  <p>this is a test paragraph after the yield</p>
+
   <p>this is a test paragraph after the yield</p>
 </body>
 </html>

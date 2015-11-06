@@ -1,4 +1,7 @@
 <h2><%= @artist.name %></h2>
+
+<img class="artist-photo" src="<%= @artist.photo_url %>">
+
 <h3> Songs by <%= @artist.name %> </h3>
 <ul>
   <% @artist.songs.each do |song| %>
@@ -7,3 +10,9 @@
     </li>
   <% end %>
 </ul>
+
+<!-- <nav>
+  |<a href="/artists/edit">Edit Artist</a> |
+</nav> -->
+
+<h6><%= @artist.nationality %></h6>
